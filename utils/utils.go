@@ -75,7 +75,7 @@ func CheckPasswordHash(password string, hash string) bool {
 }
 
 func ValidatePassword(password string) Error {
-	if len(password) < 8 {
+	if len(password) < 16 {
 		return ErrShortPassword
 	}
 	var hasUpper = false

@@ -20,7 +20,7 @@ func (e CloudError) Error() map[string]any {
 
 var (
 	ErrInvalidData                = CloudError{1, "invalid data"}
-	ErrShortPassword              = CloudError{2, "the password must be longer than 8 characters"}
+	ErrShortPassword              = CloudError{2, "the password must be longer than 16 characters"}
 	ErrWrongPasswordPolicy        = CloudError{3, "the password must include uppercase and lowercase letters, numbers, and special characters"}
 	ErrEmailIsAlreadyTaken        = CloudError{4, "email is already taken"}
 	ErrInvalidEmail               = CloudError{5, "invalid email"}
